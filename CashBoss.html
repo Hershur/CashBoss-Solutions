@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+  <title> CashBoss | Shop Easy Online </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Author" content="Assurance Fagbolagun" />
+  <meta http-equiv="Author" content="type=text/html, charset=UTF-8" />
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script>
+    $(function(){
+	$(".openNav").click(function(){
+		$(".sideNav").css("width", "294px");
+	});
+  $(".openNav").click(function(){
+		$(".page").css("backgroundColor", "rgba(0,0,0,0.5)"); 
+	});
+	
+  $(".closebtn").click(function(){
+		$(".sideNav").css("width", "0px");
+	});
+	
+  $(".closebtn").click(function(){
+		$(".page").css("backgroundColor", "rgba(255,255,255)");
+	});
+	
+  $(".page").click(function(){
+		$(".sideNav").css("width", "0px");
+	});
+  
+  });
+  </script> 
+  
+  <style>
+    span#openNav {
+		display: inline-block;
+		border-color: red;
+		float: left;
+		color: #FFFFFF;
+		padding: 8px 0px 0px 8px;
+		
+	}
+	
+	.container {
+		width: 100%;
+		background-color: #77439E;
+	}
+	
+	.dashcontainer{
+		top: 0px;
+		height: 56px;
+		margin: auto;
+		width: 95%;	
+	}
+	
+	#dash {
+		font-family: Proxima Nova Soft;
+		color: #FFFFFF;
+		line: 100%;
+		font-size: 20px;
+		padding-top: 15px;
+		padding-right: 12px;
+		display: inline-block;
+		
+	
+	}
+	
+	.even {
+		background-color: #F1F1F1;
+	}
+	
+	.odd {
+		background-color: #FFFFFF;
+		
+	}
+	
+	.dot {
+		cursor:pointer;
+		height: 13px;
+		width: 13px;
+		margin: 0 2px;
+		background-color: #FFFFFF;
+		border-radius: 50%;
+		display: inline-block;
+	}	
+	.dot2 {
+		opacity: 0.5;
+	}
+	
+	#balance, #naira, #sp {
+		color: #FFFFFF;
+		display: block;
+		
+	}
+	
+	.bal {
+		padding: 20px 0px 20px 0px;
+	}
+	#balance {
+		font-family: Proxima Nova Soft;
+		font-size: 18px;
+		line: 100%;
+	}
+	
+	#naira {
+		font-family: Proxima Nova Soft;
+		font-weight: 600;
+		font-size: 32px;
+		line: 119%;
+	}
+	
+	#sp {
+		font-family: Proxima Nova Soft;
+		font-size: 24px;
+		font-weight: 600;
+		line: 121%;
+	}
+	
+	.transact {
+		font-size: 14px;
+		font-family: Proxima Nova Soft;
+		font-weight: 500;
+		margin: auto;
+		width: 95%;
+		padding: 13px 0px 13px 0px;
+		color: #FFFFFF;
+	}
+	
+	.withdraw {
+		font-family: Proxima Nova Soft;
+		color:#959595; 
+		font-size:16px;
+		font-weight: 600;
+	}
+	.withdrawdetails {
+		font-family: Proxima Nova Soft;
+		font-weight: 500;
+		color:#959595; 
+		font-size:14px;
+		line: 115%;
+		opacity: 60%;
+		
+	}
+	
+	div#john {
+		height: 153px;
+		background-image: url("menu-header-bg@2x.png") ;
+		background-size: cover;
+	}
+	
+	 img#johndoe {
+		margin-top: 70px;
+		float:left;
+		
+	}
+	
+	#jd {
+		position:absolute;
+		margin-top: 87px; 
+		color: #FFFFFF; 
+		font-size: 18px; 
+		font-family: Proxima Nova Soft;
+		line: 100%;
+	}
+	
+	
+	div #sidedash {
+		height:55px;
+		box-sizing: border-box;
+		padding: 15px;
+	}
+	
+	div #sidedash:hover { background-color: #F7F0FC;}
+	
+	a{cursor: pointer;}
+	
+	.sideNav {
+		position: fixed;
+		display: block;
+		width: 0px;
+		height: 100%; 
+		z-index: 1; 
+		left: 0;
+		top: 0;
+		background-color: #FFFFFF;
+		overflow-x: hidden;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		
+	}
+	.closebtn {
+		font-family: Proxima Nova Soft;
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px !important;
+		margin-left: 50px;
+		color: #F7F0FC;
+	}
+	a {text-decoration: none;} 
+	
+  </style>
+</head>   
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="dashcontainer" style="text-align:center;">
+       <a class="openNav" onclick="openNav()"style="cursor:pointer; font-size:22px;color:#ffffff; text-align:center; margin-top:10px; float:left;" id="openNav">&#9776;</a>  <span id="dash" > Dashboard</span>
+      </div>
+	</div>
+	<nav class="sideNav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="john">
+	  <img id="johndoe" src="johndoe.jpg" alt="johnDoe" style="height:50px;  width:50px; margin-left: 15px;margin-right: 8px; border-radius: 50%;"/> <span id="jd"> John Doe </span>
+	</div>
+	<div>
+		<div id="sidedash">
+		  <a href="CashBoss.html"><object type="image/svg+xml" width="30" height="30" data="ic-dashboard.svg" style="float:left; margin-top:-5px;margin-right: 10px;"> Your browser does not support SVG</object> <span style="position:absolute; font-size:16px; font-family:Proxima Nova Soft; line:100%; color:#8D52BA;"> Dashboard </span></a>
+	    </div>
+		<div id="sidedash">
+		  <form>
+			<script type="text/javascript" src="https://ravesandboxapi.flutterwave.com/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+			
+			<a><object type="image/svg+xml" width="30" height="30" data="ic-accounts.svg" style="float:left; margin-top:-5px;margin-right: 10px;"> Your browser does not support SVG</object> <span style="position:absolute; font-size:16px; font-family:Proxima Nova Soft; line:100%; color:#8D52BA;" onClick="payWithRave()">Fund Account  </span></a>
+		   
+	    </div>
+		<div id="sidedash">
+		  <a><object type="image/svg+xml" width="30" height="30" data="ic-cards.svg" style="float:left; margin-top:-5px;margin-right: 10px;"> Your browser does not support SVG</object> <span style="position:absolute; font-size:16px; font-family:Proxima Nova Soft; line:100%; color:#8D52BA;" onClick="payWithRave()">Transfers </span></a>
+	    </div>
+		<div id="sidedash">
+		  <a><object type="image/svg+xml" width="30" height="30" data="ic-payments.svg" style="float:left; margin-top:-5px;margin-right: 10px;"> Your browser does not support SVG</object> <span style="position:absolute; font-size:16px; font-family:Proxima Nova Soft; line:100%; color:#8D52BA;" onClick="payWithRave()"> Airtime </span></a> </form>
+	    </div>
+		<div id="sidedash">
+		  <a><object type="image/svg+xml" width="30" height="30" data="ic-transfers.svg" style="float:left; margin-top:-5px;margin-right: 10px;"> Your browser does not support SVG</object> <span style="position:absolute; font-size:16px; font-family:Proxima Nova Soft; line:100%; color:#8D52BA;">Payments </span> </a>
+	    </div>
+		<div id="sidedash">
+		  <a><object type="image/svg+xml" width="30" height="30" data="ic-settings.svg" style="float:left; margin-top:-5px;margin-right: 10px;"> Your browser does not support SVG</object> <span style="position:absolute; font-size:16px; font-family:Proxima Nova Soft; line:100%; color:#8D52BA;"> Cards</span> </a>
+	    </div>
+		<div id="sidedash">
+		  <a><object type="image/svg+xml" width="30" height="30" data="ic-airtime.svg" style="float:left; margin-top:-5px;margin-right: 10px;"> Your browser does not support SVG</object> <span style="position:absolute; font-size:16px; font-family:Proxima Nova Soft; line:100%; color:#8D52BA;"> Settings </span></a>
+	    </div>
+	</div>
+  </nav>
+  </header>
+  
+<div class="page">
+  <div class="container" style="min-height:200px; opacity: 0.9;">
+	<div class="bal" style="text-align:center">
+      <span id="balance">Balance</span><br/>
+		<span id="naira"> </span><br/>
+		<span id="sp">16.500 SP</span><br/>
+		<span class="dot" ></span> 
+		<span class="dot dot2"></span>
+	  
+    </div>
+  </div>
+  <div class="container" style="height:42px;">
+	<div class="transact">
+	  Latest Transactions
+	</div>
+  </div>
+  
+   <div class="container odd" style="min-height:65px;">
+	 <div class="transact">
+		<span class="withdraw"> Amazon Bookstore </span> <span style="float:right; font-family: Proxima Nova Soft; font-weight:600; color:#E44235;">- &#8358; 4500.00</span> <br/><br/>
+		<span class="withdrawdetails"> Today  <span style="float:right;"> Withdrawal </span> <br/>
+	  </div>
+  </div>
+  
+   <div class="container even" style="min-height:65px;">
+     <div class="transact">
+		<span class="withdraw"> Jumia </span> <span style="float:right; font-family: Proxima Nova Soft; font-weight:600; color:#16967A;">+ &#8358; 450.00</span> <br/><br/>
+		<span class="withdrawdetails"> Yesterday  <span style="float:right;"> Withdrawal</span> <br/>
+	  </div>
+  </div>
+  
+   <div class="container odd" style="min-height:65px;">
+     <div class="transact">
+		<span class="withdraw"> 003 645 6548 65 </span> <span style="float:right; font-family: Proxima Nova Soft; font-weight:600;  color:#E44235;">- 300 SP</span> <br/><br/>
+		<span class="withdrawdetails"> 01/06/2015  <span style="float:right;"> Airtime Recharge</span> <br/>
+	  </div>
+  </div>
+  
+  <div class="container even" style="min-height:65px;">
+    <div class="transact">
+		<span class="withdraw"> John Doe </span> <span style="float:right; font-family: Proxima Nova Soft; font-weight:600; color:#16967A;">+ &#8358; 5000.00</span> <br/><br/>
+		<span class="withdrawdetails"> 31/05/2015  <span style="float:right;"> Transfer </span> <br/>
+	  </div>
+  </div>
+      
+  <div class="container odd" style="min-height:65px;">
+    <div class="transact">
+		<span class="withdraw"> 003 645 6548 65 </span> <span style="float:right; font-family: Proxima Nova Soft; font-weight:600; color:#E44235;">- 500 SP</span> <br/><br/>
+		<span class="withdrawdetails"> 30/05/2015  <span style="float:right;"> Airtime Recharge</span> <br/>
+	  </div>
+  </div>
+ </div>  
+  
+
+  <script>
+    const API_publicKey = "FLWPUBK-86f1836c5dbf39db72070ca95bdb2305-X";
+		
+	var amount = '&#8358; ' + 4000;
+	
+	document.getElementById("naira").innerHTML += amount;
+	
+       
+   
+	
+    function payWithRave() {
+		
+        var x = getpaidSetup({
+            PBFPubKey: API_publicKey,
+            customer_email: "user@example.com",
+            amount: 4000,
+            customer_phone: "234099940409",
+            currency: "NGN",
+            payment_method: "both",
+            txref: "rave-123456",
+            meta: [{
+                metaname: "flightID",
+                metavalue: "AP1234"
+            }],
+            onclose: function() {},
+            callback: function(response) {
+                var txref = response.tx.txRef; // collect flwRef returned and pass to a server page to complete status check.
+                console.log("This is the response returned after a charge", response);
+                if (
+                    response.tx.chargeResponseCode == "00" ||
+                    response.tx.chargeResponseCode == "0"
+                ) {
+                    // redirect to a success page
+                } else {
+                    // redirect to a failure page.
+                }
+
+                x.close(); // use this to close the modal immediately after payment.
+            }
+        });
+    }
+</script>
+  
+</body>
+
+</html>
